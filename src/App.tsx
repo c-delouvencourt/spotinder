@@ -2,7 +2,7 @@ import React from 'react';
 import {ChakraProvider} from "@chakra-ui/react";
 import theme from "./Theme";
 import {Provider} from 'react-redux';
-import {BrowserRouter, Navigate, Route, Routes as Switch} from "react-router-dom";
+import {HashRouter, Navigate, Route, Routes as Switch} from "react-router-dom";
 import {Routes} from "./Routes";
 import "./assets/scss/app.scss";
 import AuthLoginScreen from "./screens/auth/login/AuthLoginScreen";
@@ -18,7 +18,7 @@ function App({store} : {store: any}) {
         <ChakraProvider theme={theme}>
             <Provider store={store}>
                 <AudioPlayerProvider>
-                    <BrowserRouter>
+                    <HashRouter>
                         <Switch>
                             <Route path={"/"} element={<Navigate to={Routes.AUTH.LOGIN} replace/>} />
 
@@ -26,7 +26,7 @@ function App({store} : {store: any}) {
 
                             <Route path={Routes.DASHBOARD} element={<DashboardScreen/>} />
                         </Switch>
-                    </BrowserRouter>
+                    </HashRouter>
                 </AudioPlayerProvider>
             </Provider>
         </ChakraProvider>
