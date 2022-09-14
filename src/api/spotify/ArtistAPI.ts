@@ -25,7 +25,7 @@ export default class ArtistAPI {
         let shuffleIds = ArrayUtils.shuffle(ids);
 
         return new Promise((resolve, reject) => {
-            SpotifyAPI.url('/recommendations?limit=30&seed_artists=' + shuffleIds.slice(0, 4).join(','))
+            SpotifyAPI.url('/recommendations?limit=100&seed_artists=' + shuffleIds.slice(0, 4).join(','))
                 .needAuth()
                 .get()
                 .then((r) => {

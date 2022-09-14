@@ -48,11 +48,56 @@ html, body {
 
   .swipe{
     position: fixed;
-    top: 50%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .review{
+    position: fixed;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
+
+.save-button {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  border: none !important;
+  transition: all 0.3s ease-in-out !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+}
+
+.like-button{
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  border: none !important;
+  height: 75px !important;
+  transition: all 0.3s ease-in-out !important;
+
+  &.is-green:hover{
+    background: rgba(27, 155, 23, 0.15) !important;
+  }
+
+  &.is-red:hover{
+    background: rgba(139, 21, 21, 0.15) !important;
+  }
+
+  .keyboard-key{
+    box-shadow: 1px 2px 0px 2px #bcbcbc !important;
+  }
+}
+
+.overlay-footer{
+  position: fixed;
+  bottom: 10px;
+  width: 100vw;
+}
+
 
 .PlayerRSWP{
  // display: none;
@@ -60,7 +105,7 @@ html, body {
 
 .play-button-overlay{
   position: absolute;
-  top: 25px;
+  top: 0px;
   right: 0;
   bottom: 0;
   width: 300px;
@@ -71,4 +116,9 @@ html, body {
   background: rgba(0,0,0,0.3);
   backdrop-filter: blur(30px);
   cursor: pointer;
+}
+
+.card-song{
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(30px);
 }
