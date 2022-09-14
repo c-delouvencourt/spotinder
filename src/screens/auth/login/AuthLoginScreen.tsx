@@ -39,7 +39,7 @@ export default function AuthLoginScreen() {
                                 </Center>
                             ) : (
                                 <SpotifyAuth
-                                    redirectUri='https://spotify.nocturne.app/auth/login'
+                                    redirectUri='https://c-delouvencourt.github.io/spotinder/'
                                     clientID='5fd9d3900ce54d6d979588225acc3056'
                                     scopes={["playlist-modify-private", "playlist-modify-public", "playlist-read-private", "playlist-read-collaborative", "user-read-playback-state", "user-modify-playback-state", "user-read-recently-played" , "user-top-read", "playlist-read-collaborative", "playlist-read-private", "user-read-private"]}
                                     onAccessToken={(token: string) => {
