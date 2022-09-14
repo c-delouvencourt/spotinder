@@ -1,0 +1,37 @@
+.rdt_TableRow{
+  height: 75px;
+  border-bottom: 1px solid #f5f5f5 !important;
+}
+
+.rdt_Pagination{
+  color: #000 !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.rdt_Table {
+  background-color: transparent !important;
+}
+
+.rdt_TableHead{
+  background: #FCFCFD;
+}
+
+
+.rdt_TableCol_Sortable {
+  font-weight: 500 !important;
+  color: #272727;
+  font-size: 11px;
+}
+
+.rdt_TableCol {
+  font-weight: 500 !important;
+  color: #272727;
+  font-size: 12px;
+}
+
+.rdt_TableHeadRow{
+  min-height: 37px !important;
+  border-bottom-color: #d9dade !important;
+  border-radius: 0 !important;
+}

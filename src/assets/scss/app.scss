@@ -1,0 +1,74 @@
+// Basic
+@import "./variables";
+@import "./helpers";
+// Plugins
+@import '~react-agenda/build/styles.css';
+@import '~react-datetime/css/react-datetime.css';
+@import 'plugins/toast.css';
+@import 'plugins/table.css';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $secondary-font-family;
+}
+
+html, body {
+  background: #000 !important;
+  font-family: $secondary-font-family !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efecec;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dashboard-screen{
+  height: 100vh;
+    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .swipe{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.PlayerRSWP{
+ // display: none;
+}
+
+.play-button-overlay{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(30px);
+  cursor: pointer;
+}
