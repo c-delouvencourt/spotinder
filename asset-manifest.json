@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/spotinder/static/css/main.aa327cc5.css",
-    "main.js": "/spotinder/static/js/main.bc9fe2d8.js",
+    "main.css": "/spotinder/static/css/main.cd969f5d.css",
+    "main.js": "/spotinder/static/js/main.bc270268.js",
     "static/media/sad_face.png": "/spotinder/static/media/sad_face.9cadc4b33a7ced82a0d9.png",
     "static/media/happy_face.png": "/spotinder/static/media/happy_face.5625b4bf3b0c010b46cd.png",
     "index.html": "/spotinder/index.html",
-    "main.aa327cc5.css.map": "/spotinder/static/css/main.aa327cc5.css.map",
-    "main.bc9fe2d8.js.map": "/spotinder/static/js/main.bc9fe2d8.js.map"
+    "main.cd969f5d.css.map": "/spotinder/static/css/main.cd969f5d.css.map",
+    "main.bc270268.js.map": "/spotinder/static/js/main.bc270268.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa327cc5.css",
-    "static/js/main.bc9fe2d8.js"
+    "static/css/main.cd969f5d.css",
+    "static/js/main.bc270268.js"
   ]
 }
